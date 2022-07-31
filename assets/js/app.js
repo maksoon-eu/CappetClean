@@ -16,7 +16,7 @@ $('.valueTag').click(function() {
     let currentHeight = $('#selectBox').height();
     $('#selectBox').addClass('b__color');
     if (currentHeight < 100 || currentHeight == selectDefaultHeight) {
-        $('#selectBox').height("155px");
+        $('#selectBox').height("200px");
         $('.arrow').css({transition: ".2s", transform: "rotate(180deg)"});
     }
 
