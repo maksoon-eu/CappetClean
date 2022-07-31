@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href = "fonts/stylesheet.css" rel = "stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <title>ХимЧисто</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+<div class="page">
+<header class="header" id="header">
+    
+        <div class="header__inner">
+            <a href="#" class="logo">
+                Хим<span>Чисто</span>
+            </a>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav__item" data-scroll="#cost">Цены</a>
+                    <a href="#" class="nav__item" data-scroll="#about">О нас</a>
+                    <a href="#" class="nav__item" data-scroll="#stage">Этапы</a>
+                    <a href="#" class="nav__item" data-scroll="#reviews">Отзывы</a>
+                    <a href="#" class="nav__item" data-scroll="#contacts">Контакты</a>
+
+                    <div class="contacts">
+                        <a href="#" class="viber">
+                            <img src="assets/img/viber.svg" alt="">
+                        </a>
+                        <a href="#" class="watsapp">
+                            <img src="assets/img/whatsapp.svg" alt="">
+                        </a>
+                        <a href="#" class="telegram">
+                            <img src="assets/img/telegram.svg" alt="">
+                        </a>
+                    </div>
+
+                    <a class="btn">
+                        Оставить заявку
+                    </a>
+                </nav>
+            
+            <button class="burger" type="button" id="navToggle">
+                <span class="burger__item"></span>
+            </button>
+        </div>
+</header>
+
+<div class="content">
+    <div class="container">
+        <div class="content__inner">
+            <div class="content__left">
+                <img class="people animate__animated animate__fadeInLeft animate__delay-1s" src="assets/img/logo_people.png" alt="">
+                <img class="green_circle animate__animated animate__fadeInLeft animate__delay-2s" src="assets/img/green_circle.png" alt="">
+                <img class="orange_circle animate__animated animate__fadeInLeft" src="assets/img/orange_circle.png" alt="">
+            </div>
+            <div class="content__right">
+                <div class="content__right-title">Профессиональная<br>Студия стирки ковров<br>В Минске</div>
+                <div class="content__right-subtitle">Закажите профессиональную чистку ковра от 120р.</div>
+                <div class="buttons">
+                    <div class="btn btn--orange mr">Рассчитать стоимость</div>
+                    <div class="btn btn--border">Связаться с нами</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="price" id="cost">
+    <div class="container">
+        <div class="cards">
+            <div class="cards__item">
+                <img src="assets/img/card1.svg" alt="">
+                <div class="text">Работаем с<br><span>2011</span> года</div>
+            </div>
+            <div class="cards__item">
+                <img src="assets/img/card2.svg" alt="">
+                <div class="text">Почищено более<br><span>155 000</span>ковров</div>
+            </div>
+            <div class="cards__item">
+                <img src="assets/img/card3.svg" alt="">
+                <div class="text">Только лучшие<br>моющие средства</div>
+            </div>
+            <div class="cards__item">
+                <img src="assets/img/card4.svg" alt="">
+                <div class="text">Доступные цены<br>для вас</div>
+            </div>
+        </div>
+        
+        <div class="price__inner">
+            <div class="price__inner-subtitle">Цены</div>
+            <div class="price__inner-title">Стоимость Работ</div>
+            <div class="price__group">
+                <div class="selectBox" id=selectBox>
+                   <img class="arrow" src = "assets/img/arrow.svg" alt=""/>
+                   <div class='valueTag' name=select>Выберите вид ковра</div>
+                    <ul class="selectMenuBox" id=selectMenuBox>
+                      <li class='option' id="8">Низкий ворс</li>
+                      <li class='option' id="9">Высокий ворс</li>
+                    </ul>
+                </div>
+                <input type="text" class="square jsSquare" placeholder="Площадь ковра м">
+                <input type="text" class="square" placeholder="Ваше Имя">
+                <input type="text" class="square phone" placeholder="Номер телефона">
+            </div>
+            <div class="flex">
+                <div class="materials">
+                    <div class="vors">Низкий ворс<span>от 8 руб. м</span></div>
+                    <div class="vors">Высокий ворс<span class="more">от 9 руб. м</span></div>
+                </div>
+                <div class="flex2">
+                    <div class="tkan">Вискоза, хлопок,<br>шерсть</div>
+                    <div class="fat">от 11 руб. м</div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="banner__cost">
+                    <div class="banner__cost-title">Стоимость работ <span class="count">от 400</span> руб.</div>
+                    <div class="banner__cost-sybtitle">* цена может отличаться в большую или меньшую сторону от заявленной, в зависимости от размеров и степени загрязнения ковров</div>
+                </div>
+                <a class="btn btn--width">
+                    Узнать стоимость
+                </a>
+            </div>
+        </div>
+
+        <div class="clean">
+            <div class="clean__img animate__animated">
+                <img src="assets/img/clean.png" alt="">
+            </div>
+            <div class="clean__text">
+                <div class="clean__text-title">Описание нашей<br>Студии стирки ковров</div>
+                <div class="clean__text-text">
+                    <p class="clean__text-text">Производится при помощи роторных машин и гипоаллергенных моющих средств. Щётки роторной машины глубоко чистят ворс ковра, а моющие свойства средства помогают удалить самые застарелые участки.</p>
+                    <p class="clean__text-text2">Производится с помощью специальных расчёсок, которые помогают удалить с ворса ковра уже "отмершие" участки ворса, волосы и шерсть домашних животных. Чистят ворс ковра, а моющие свойства средства помогают удалить самые застарелые участки</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bubles">
+        <img src="assets/img/bubles2.png" alt="" >
+    </div>
+</div>
+
+<div class="stage" id="stage">
+    <div class="container">
+        <div class="stage__inner">
+            <div class="stage__inner-title">Этапы</div>
+            <div class="stage__inner-subtitle">Этапы химчистки ковров</div>
+            <img class="map_stages" src="assets/img/stages.svg" alt="">
+            <div class="non">
+                <img src="assets/img/map.png" alt="" class="map">
+                <div class="stage__group group1 animate__animated">
+                    <div class="stage__group-title">Сухая чистка</div>
+                    <div class="stage__group-text">Производится с помощью щеточных пылесосов с турбощеткой, происходит поднятие ворса и тщательное удаление крупного мусора.</div>
+                </div>
+                <div class="stage__group group2 animate__animated animate__delay-1s">
+                    <div class="stage__group-title2">Глубинное обеспыливание ковров</div>
+                    <div class="stage__group-text">При помощи пылевыбивательного автомата (выбивание с двух сторон).</div>
+                </div>
+                <div class="stage__group group3 animate__animated animate__delay-2s">
+                    <div class="stage__group-title">Стирка</div>
+                    <div class="stage__group-text">Производится при помощи роторных машин и гипоаллергенных моющих средств. Щётки роторной машины глубоко чистят ворс ковра, а моющие свойства средства помогают удалить самые застарелые участки.</div>
+                </div>
+                <div class="stage__group group4 animate__animated animate__delay-3s">
+                    <div class="stage__group-title">Отжим и полоскание</div>
+                    <div class="stage__group-text">Ковер транспартируется в центрифугу. При помощи обильного потока воды и специального средства для ковров, происходит ополаскивание и очистка ковра от остатков мобщих средств и грязи. После, ковер отжимается до остаточной влажности в 20-30%.</div>
+                </div>
+                <div class="stage__group group5 animate__animated animate__delay-4s">
+                    <div class="stage__group-title">Вычесывание</div>
+                    <div class="stage__group-text">Производится с помощью специальных расчёсок, которые помогают удалить с ворса ковра уже "отмершие" участки ворса, волосы и шерсть домашних животных.</div>
+                </div>
+                <div class="stage__group group6 animate__animated animate__delay-5s">
+                    <div class="stage__group-title">Сушка ковров</div>
+                    <div class="stage__group-text">Сушка происходт в
+                        специализированной 
+                        камере.</div>
+                </div>
+                <div class="stage__group group7 animate__animated">
+                    <div class="stage__group-title3">Финальный этап</div>
+                    <div class="stage__group-text">- Пылесошение<br>- Уборка лишних волокон<br>- Упаковка ковра</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="team" id="about">
+    <img src="assets/img/team.png" alt="" class="rectang">
+    <div class="container">
+        <div class="team__inner">
+            <div class="team__inner-title">Команда</div>
+            <div class="team__inner-subtitle">Наши специалисты</div>
+            <div class="team__inner-photo">
+                <div class="people">
+                    <img src="assets/img/people.png" alt="">
+                </div>
+                <div class="people">
+                    <img src="assets/img/people.png" alt="">
+                </div>
+                <div class="people">
+                    <img src="assets/img/people.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="descrip">
+    <div class="container">
+        <div class="team__cont">
+            <div class="team__left">
+                <div class="clean__text-title">Больше информации о<br>Наших специалистах</div>
+                <div class="team__left-text">
+                    <p class="clean__text-text">Производится при помощи роторных машин и гипоаллергенных моющих средств. Щётки роторной машины глубоко чистят ворс ковра, а моющие свойства средства помогают удалить самые застарелые участки.</p>
+                    <p class="clean__text-text2">Производится с помощью специальных расчёсок, которые помогают удалить с ворса ковра уже "отмершие" участки ворса, волосы и шерсть домашних животных. Чистят ворс ковра, а моющие свойства средства помогают удалить самые застарелые участки</p>
+                </div>
+            </div>
+            <div class="team__right">
+                <img src="assets/img/cappet.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="reviews" id="reviews">
+    <div class="container">
+        <div class="reviews__inner">
+            <div class="stage__inner-title">Отзывы</div>
+            <div class="stage__inner-subtitle">Отзывы клиентов</div>
+            <div class="reviews__slider" id="reviewsSlider">
+                <div>
+                    <div class="slider__item">
+                        <div class="reviews__cappet">
+                            <img src="assets/img/reviews.png" alt="">
+                        </div>
+                        <div class="reviews__text">
+                            <div class="reviews__text-man">
+                                <img src="assets/img/reviews_p.png" alt="" class="man__photo">
+                                <div class="reviews__text-name">Анна Сафронова</div>
+                            </div>
+                            <div class="reviews__text-text">Спасибо большое за выполненную работу. Я очень довольна своим чистым ковром. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные.</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slider__item">
+                        <div class="reviews__cappet">
+                            <img src="assets/img/reviews.png" alt="">
+                        </div>
+                        <div class="reviews__text">
+                            <div class="reviews__text-man">
+                                <img src="assets/img/reviews_p.png" alt="" class="man__photo">
+                                <div class="reviews__text-name">Анна Сафронова</div>
+                            </div>
+                            <div class="reviews__text-text">Спасибо большое за выполненную работу. Я очень довольна своим чистым ковром. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные.</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slider__item">
+                        <div class="reviews__cappet">
+                            <img src="assets/img/reviews.png" alt="">
+                        </div>
+                        <div class="reviews__text">
+                            <div class="reviews__text-man">
+                                <img src="assets/img/reviews_p.png" alt="" class="man__photo">
+                                <div class="reviews__text-name">Анна Сафронова</div>
+                            </div>
+                            <div class="reviews__text-text">Спасибо большое за выполненную работу. Я очень довольна своим чистым ковром. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные.</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slider__item">
+                        <div class="reviews__cappet">
+                            <img src="assets/img/reviews.png" alt="">
+                        </div>
+                        <div class="reviews__text">
+                            <div class="reviews__text-man">
+                                <img src="assets/img/reviews_p.png" alt="" class="man__photo">
+                                <div class="reviews__text-name">Анна Сафронова</div>
+                            </div>
+                            <div class="reviews__text-text">Спасибо большое за выполненную работу. Я очень довольна своим чистым ковром. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные.</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slider__item">
+                        <div class="reviews__cappet">
+                            <img src="assets/img/reviews.png" alt="">
+                        </div>
+                        <div class="reviews__text">
+                            <div class="reviews__text-man">
+                                <img src="assets/img/reviews_p.png" alt="" class="man__photo">
+                                <div class="reviews__text-name">Анна Сафронова</div>
+                            </div>
+                            <div class="reviews__text-text">Спасибо большое за выполненную работу. Я очень довольна своим чистым ковром. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные. Теперь сново будет не стыдно повесить на стену за шкафом, а то обои страшные.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="form" id="contacts">
+    <div class="container">
+        <div class="form__inner">
+            <div class="stage__inner-title chek">Контакты</div>
+            <div class="stage__inner-subtitle">Заполните форму</div>
+            <div class="form__flex">
+                <div class="cards cards-col">
+                    <div class="cards__item margb">
+                        <img src="assets/img/card1.svg" alt="">
+                        <div class="text">Работаем с<br><span>2011</span> года</div>
+                    </div>
+                    <div class="cards__item margb">
+                        <img src="assets/img/card2.svg" alt="">
+                        <div class="text">Почищено более<br><span>155 000</span>ковров</div>
+                    </div>
+                    <div class="cards__item margb">
+                        <img src="assets/img/card3.svg" alt="">
+                        <div class="text">Только лучшие<br>моющие средства</div>
+                    </div>
+                    <div class="cards__item margb">
+                        <img src="assets/img/card4.svg" alt="">
+                        <div class="text">Доступные цены<br>для вас</div>
+                    </div>
+                </div>
+                <div class="form__banner">
+                    <div class="form__banner-subtitle">Заполните заявку и мы очистим ваши ковры.</div>
+                    <div class="form__group">
+                        <input type="text" class="square square--min square--mr" placeholder="Ваше Имя">
+                        <input type="text" class="square square--min phone" placeholder="Номер телефона">
+                    </div>
+                    <textarea class="form__input" placeholder="Сообщение" ></textarea>
+                    <a class="btn btn--min center">
+                        Отправить
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="car">
+    <div class="container">
+        <div class="car__inner">
+            <div class="car__left">
+                <div class="car__inner-title">Нужна стирка Ковра?</div>
+                <div class="car__inner-text">Постираем и доставим к вам в течении 4 - 10 рабочих дней со скидкой до 25%</div>
+                <a class="btn btn--width btn--orange center">
+                    ЗАКАЗАТЬ ХИМЧИСКУ
+                </a>
+            </div>
+            <div class="car__right animate__animated">
+                <img src="assets/img/car.png" alt="" class="car__photo">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__inner-zone">
+                <div class="footer__title">Зоны обслуживания:</div>
+                <div class="footer__text">Работаем в Минске и пригороде<br>ООО "Химчисто бел" УНП 193607627<br>г.Минск ул. Инженерная 24</div>
+            </div>
+            <div class="footer__inner-email">
+                <div class="footer__title">Email:</div>
+                <a class="footer__text" href="mailto:himschistomail.ru">himschistomail.ru</a>
+            </div>
+            <div class="footer__inner-phone">
+                <div class="footer__title">Телефон:</div>
+                <a class="footer__text" href="tel:+375 (33) 608-03-03">+375 (33) 608-03-03</a>
+            </div>
+            <div class="footer__inner-menu">
+                <div class="footer__title">Меню:</div>
+                <ul class="footer__text">
+                    <li>Стоимость</li>
+                    <li>Этапы выполнения</li>
+                    <li>Отзывы</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer__under">
+        &copy; 2022 ХимЧисто. Все права защищены.
+    </div>
+</footer>
+
+
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
